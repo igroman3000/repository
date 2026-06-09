@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Horror — Скачать игру</title>
+    <style>
+        /* Общие стили в стиле Хоррор */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Шапка сайта */
+        header {
+            background: linear-gradient(180deg, #1a0000 0%, #0d0d0d 100%);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 2px solid #800000;
+        }
+
+        header h1 {
+            color: #ff0000;
+            font-size: 3.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-top: 10px;
+        }
+
+        /* Главный контейнер */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Секции */
+        section {
+            background-color: #141414;
+            border: 1px solid #262626;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #ff3333;
+            border-bottom: 1px solid #401010;
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        /* Стили для списков (инструкция) */
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            background-color: #261010;
+            color: #ff6666;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+
+        /* Зона скачивания и кнопка */
+        .download-box {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #990000;
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(153, 0, 0, 0.4);
+            border: 1px solid #ff3333;
+        }
+
+        .btn-download:hover {
+            background-color: #cc0000;
+            box-shadow: 0 0 25px rgba(204, 0, 0, 0.8);
+            transform: scale(1.05);
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            font-size: 0.9rem;
+            border-top: 1px solid #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Snake Horror</h1>
+        <p>Она следует за тобой в абсолютной темноте. Сможешь ли ты сбежать?</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Описание игры -->
+        <section>
+            <h2>Об игре</h2>
+            <p>Вы очнулись в бесконечном темном коридоре. Единственный друг — это тусклый фонарик. Но вы здесь не одни. Из глубины тьмы за вами ползет гигантский монстр-змея, скорость которого постоянно растет. На вашем пути будут возникать завалы из ящиков, которые преграждают путь и заставляют маневрировать на полной скорости. Доберитесь до выхода (300 метров), пока ОНО вас не поймало.</p>
+        </section>
+
+        <!-- Инструкция по установке -->
+        <section>
+            <h2>Инструкция по установке и запуску</h2>
+            <ol>
+                <li>Скачайте ZIP-архив с игрой, нажав на красную кнопку ниже.</li>
+                <li>Распакуйте скачанный архив <strong>в отдельную папку</strong> на вашем компьютере (это важно, чтобы игра видела текстуры стен, пола и ящиков).</li>
+                <li>Убедитесь, что на вашем компьютере установлен Python. Если его нет, скачайте его с официального сайта.</li>
+                <li>Откройте терминал (командную строку) в папке с игрой и установите игровой движок Ursina, прописав команду: 
+                    <br><br><span class="highlight">pip install ursina</span><br><br>
+                </li>
+                <li>Запустите игру, дважды кликнув по файлу скрипта или через команду:
+                    <br><br><span class="highlight">python snake_horror.py</span>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Системные требования -->
+        <section>
+            <h2>Системные требования</h2>
+            <ul>
+                <li><strong>ОС:</strong> Windows 10 / 11 / Linux / macOS</li>
+                <li><strong>Язык:</strong> Python 3.10 или новее</li>
+                <li><strong>Библиотеки:</strong> Ursina Engine</li>
+                <li><strong>Дополнительно:</strong> Видеокарта с поддержкой OpenGL</li>
+            </ul>
+        </section>
+
+        <!-- Кнопка Скачать -->
+        <section class="download-box">
+            <h2>Готовы сыграть?</h2>
+            <p>Скачайте полную версию игры (включая все хоррор-текстуры и аудиоэффекты скримеров):</p>
+            <br>
+            <!-- Ссылка ведет на ваш ZIP архив в той же папке -->
+            <a href="snake_horror.zip" download class="btn-download">Скачать ZIP архив</a>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Разработка инди-хорроров на Ursina Engine. Все права защищены.
+    </footer>
+
+</body>
+</html>
